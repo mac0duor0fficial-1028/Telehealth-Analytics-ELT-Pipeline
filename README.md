@@ -2,6 +2,7 @@
 
 A hospital network launches a telehealth app. Leadership wants **daily active users**, **appointment wait times** and **clinic performance**, but the data lives behind a scheduling API. This project builds the full path from API to trusted, tested, documented metrics.
 
+# Architectural Overview
 ```mermaid
 flowchart LR
   A[Doctor Appointment API<br/>REST / JSON] -->|Python: requests + tenacity<br/>PUT + COPY INTO| B[(Snowflake RAW<br/>VARIANT, append-only)]
